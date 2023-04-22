@@ -24,7 +24,8 @@ type ApiPostResponse = {
   content: string;
 };
 
-const API_URL = "http://localhost:8000/api/v1/tasks/";
+// const API_URL = "http://localhost:8000/api/v1/tasks/";
+const API_URL = "/api/v1/tasks/";
 
 const V4Form = ({ tasks, setTasks }: Props) => {
   const [content, setContent] = useState("");

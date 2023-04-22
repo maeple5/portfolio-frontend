@@ -2,7 +2,8 @@ import React, { Dispatch, SetStateAction } from "react";
 import { Task } from "../Task";
 import axios from "axios";
 
-const API_URL = "http://localhost:8000/api/v1/tasks/";
+// const API_URL = "http://localhost:8000/api/v1/tasks/";
+const API_URL = "/api/v1/tasks/";
 
 type Props = {
   tasks: Task[];
