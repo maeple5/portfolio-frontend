@@ -1,3 +1,26 @@
+以下のQiitaの記事で扱っているフロントエンドのリポジトリです。
+
+[CI/CDパイプラインを構築してReact × DjangoRestFrameworkで作ったSPAをGKEクラスタにデプロイする](https://qiita.com/maeple5/items/0967a7c41115257a1564)
+
+テンプレートにしてあるので、利用したい場合はcloneするのではなく「Use this template」>「Create a new repository」をクリックして新規リポジトリを作成してください。
+
+使用するにはpackage.jsonのあるディレクトリで、
+
+    npm install
+を実行してモジュールをインストールしてください。
+
+また、ESLintとPrettierを使えるようにしてあります。
+以下のコマンドにより実行可能です。詳しくは「package.json」を確認してください。
+
+    npm run lint:eslint
+    npm run fix:eslint
+    npm run lint:prettier
+    npm run fix:prettier
+
+Dockerfileではマルチステージングビルドというものを使っています。
+Dockerに興味のある方は調べてみるとよいかもしれません。
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
